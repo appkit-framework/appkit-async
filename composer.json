@@ -1,0 +1,25 @@
+{
+    "name": "appkit/async",
+    "type": "library",
+    "description": "Async utilities for the AppKit framework",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "require": {
+        "appkit/exception": "^1.0",
+        "react/async": "^4.3",
+        "react/event-loop": "^1.6",
+        "react/promise": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppKit\\Async\\": "src/"
+        },
+        "files": [
+            "src/functions_include.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
