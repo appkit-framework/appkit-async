@@ -10,9 +10,10 @@ use function React\Async\await;
 
 class Task {
     public const RUNNING   = 0;
-    public const COMPLETED = 1;
-    public const CANCELED  = 2;
-    public const FAILED    = 3;
+    public const CANCELING = 1;
+    public const COMPLETED = 2;
+    public const CANCELED  = 3;
+    public const FAILED    = 4;
 
     private $status;
     private $promise;
@@ -38,8 +39,13 @@ class Task {
         return $this -> promise;
     }
 
-    public function isRunning() {
-        return $this -> status == self::RUNNING;
+    public function isActive() {
+        return $this -> status == self::RUNNING ||
+               $this -> status == self::CANCELING;
+    }
+
+    public function isDone() {
+        return $this -> status >= self::COMPLETED;
     }
 
     public function await() {
@@ -53,6 +59,7 @@ class Task {
     }
 
     public function cancel() {
+        $this -> status = self::CANCELING;
         $this -> promise -> cancel();
     }
 }
