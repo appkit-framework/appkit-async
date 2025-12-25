@@ -2,9 +2,6 @@
 
 namespace AppKit\Async;
 
-use AppKit\Async\Exception\CanceledException;
-use AppKit\Async\Exception\TaskException;
-
 use Throwable;
 use React\Promise\Deferred;
 use React\EventLoop\Loop;

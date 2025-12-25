@@ -2,8 +2,6 @@
 
 namespace AppKit\Async;
 
-use AppKit\Async\Exception\CanceledException;
-
 use React\Promise\Promise;
 use React\EventLoop\Loop;
 use function React\Async\await;

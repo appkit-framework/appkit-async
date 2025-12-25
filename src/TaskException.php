@@ -1,6 +1,6 @@
 <?php
 
-namespace AppKit\Async\Exception;
+namespace AppKit\Async;
 
 use Exception;
 
