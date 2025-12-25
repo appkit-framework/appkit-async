@@ -2,6 +2,6 @@
 
 namespace AppKit\Async\Exception;
 
-use AppKit\Exception\AppKitException;
+use Exception;
 
-class CanceledException extends AppKitException {}
+class CanceledException extends Exception {}

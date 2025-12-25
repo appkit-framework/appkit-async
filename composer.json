@@ -5,7 +5,6 @@
     "minimum-stability": "stable",
     "license": "MIT",
     "require": {
-        "appkit/exception": "^1.0",
         "react/async": "^4.3",
         "react/event-loop": "^1.6",
         "react/promise": "^3.3"

@@ -2,6 +2,6 @@
 
 namespace AppKit\Async\Exception;
 
-use AppKit\Exception\AppKitException;
+use Exception;
 
-class TaskException extends AppKitException {}
+class TaskException extends Exception {}
