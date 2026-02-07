@@ -5,8 +5,6 @@ namespace AppKit\Async;
 use Throwable;
 use React\Promise\Deferred;
 use React\EventLoop\Loop;
-use function React\Async\async;
-use function React\Async\await;
 
 class Task {
     public const PENDING   = 0;
