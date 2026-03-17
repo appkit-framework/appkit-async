@@ -19,7 +19,7 @@ class ExecutionContext {
         self::$data[ self::getFiberKey() ][$key] = $value;
     }
 
-    public static function delete($key) {
+    public static function unset($key) {
         unset(self::$data[ self::getFiberKey() ][$key]);
     }
 
